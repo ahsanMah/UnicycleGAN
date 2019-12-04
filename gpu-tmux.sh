@@ -8,4 +8,6 @@ tmux new-session \; \
   send-keys 'watch -n1 "cat /proc/cpuinfo | grep \"^[c]pu MHz\""' C-m \; \
   select-pane -t 0 \; \
   split-window -v \; \
-  send-keys 'htop' C-m \; 
+  send-keys 'htop' C-m \; \
+  select-pane -t 0 \;
+
